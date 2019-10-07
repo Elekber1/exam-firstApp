@@ -1,0 +1,62 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+
+    <changeSet id="1" author="alakbar">
+        <createTable tableName="weather1">
+            <column name="id" type="int8" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"></constraints>
+            </column>
+            <column name="city" type="varchar(255)"></column>
+            <column name="date" type="date"></column>
+            <column name="temp" type="varchar(255)"></column>
+        </createTable>
+    </changeSet>
+
+
+
+<!--    <changeSet id="2" author="alakbar">-->
+<!--        <createTable tableName="city">-->
+<!--            <column name="id" type="int8" autoIncrement="true">-->
+<!--                <constraints primaryKey="true" nullable="false"></constraints>-->
+<!--            </column>-->
+<!--            <column name="city" type="varchar(255)"></column>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+
+
+<!--    <changeSet id="3" author="alakbar">-->
+<!--        <createTable tableName="date">-->
+<!--            <column name="id" type="int8" autoIncrement="true">-->
+<!--                <constraints primaryKey="true" nullable="false"></constraints>-->
+<!--            </column>-->
+<!--            <column name="date" type="date"></column>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+
+
+<!--    <changeSet id="4" author="alakbar">-->
+<!--        <createTable tableName="city_date">-->
+<!--            <column name="id" type="int8" autoIncrement="true">-->
+<!--                <constraints primaryKey="true" nullable="false"></constraints>-->
+<!--            </column>-->
+
+<!--            <column name="city_id" type="int8">-->
+<!--            </column>-->
+<!--            <column name="date_id" type="int8">-->
+<!--            </column>-->
+<!--            <column name="temp" type="varchar(255)"></column>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+
+
+
+
+
+
+</databaseChangeLog>
